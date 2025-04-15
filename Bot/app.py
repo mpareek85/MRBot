@@ -10,7 +10,8 @@ app = Flask(__name__)
 CORS(app)  # Enables CORS for all routes
 
 # Initialize OpenAI LLM using LangChain
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+#llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, api_key=os.getenv("OPENAI_API_KEY"))
 
 # Define prompt template
 template = PromptTemplate(
