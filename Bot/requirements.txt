@@ -3,3 +3,4 @@ flask-cors
 langchain
 langchain-community
 langchain-ollama
+langchain-openai
